@@ -1,0 +1,32 @@
+body{
+    width: 1536px;
+    height: 864px;
+    background-image: linear-gradient(to top,#5DFFCE,#022026);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px 10px;
+    
+}
+div.tuteur{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    position: absolute;
+}
+div.student{
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    position: absolute;
+}
+div.page{
+    width: 1739.31px;
+    height: 2089.78px;
+    background-color: #EFFFF9;
+    position: relative;
+    margin: 50px 30px 80px 30px;
+    border-radius: 34px;
+}
