@@ -1,0 +1,381 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #5DFFCE, #022026);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.pageQuestionAnswerTutor {
+    margin-bottom: 100px;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1251px;
+    height: 100vh;
+    background-color: #F1FDF9;
+    border-radius: 34px;
+    box-shadow: -6px 5px 20px #0000008d , 3px 5px 50px #000000db inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;        
+    scrollbar-color: #00412b00 #9fffe500;
+}
+
+
+.QuestionsToTutor{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-family: 'lato', sans-serif;
+    font-size:  50px;
+    font-weight:1000;
+}
+.QuestionsImg{
+    position: absolute;
+    top:78px;
+    right: 6px;
+    width: 480px;
+    height: 480px;
+    opacity: 0.92;
+}
+.Questionbtn>button.AllQuestion{
+    /* position: absolute;
+    top: 196px;
+    left: 290px; */
+    width: 60px;
+    height: 30px;
+    background-color: #faf0cd;
+    border-radius: 23px;
+    box-shadow: 3px 3px 4px #0000005e ,0px 4px 4px rgba(0, 0, 0, 0.293) inset;
+    border: 0;
+}
+.Questionbtn button.active {
+    transform: scale(1.2);
+    background-color: #fae186;
+}
+
+.Questionbtn>button.Answered{
+    width: 170px;
+    height: 30px;
+    background-color: #faf0cd;
+    border-radius: 23px;
+    box-shadow: 3px 3px 4px #0000005e ,0px 4px 4px rgba(0, 0, 0, 0.293) inset;
+    border: 0;
+}
+.Questionbtn>button.Unanswered{
+    width: 170px;
+    height: 30px;
+    background-color: #faf0cd;
+    border-radius: 23px;
+    box-shadow: 3px 3px 4px #0000005e ,0px 4px 4px rgba(0, 0, 0, 0.293) inset;
+    border: 0;
+}
+.Questionbtn>button:hover{
+    white-space-collapse: 10px;
+    transform: scale(1.1);
+    background-color: #fde9a3;
+}
+.Questionbtn>button:focus{
+    white-space-collapse: 10px;
+    transform: scale(1.2);
+    background-color: #fae186;
+}
+.Questionbtn{
+    display: flex;
+    gap: 110px;
+  position: absolute;
+  top: 180px;
+  left: 130px;
+}
+.Questionbtn>button.active {
+    transform: scale(1.2);
+    background-color: #fae186;
+}
+
+.searchFAQ>input:hover {
+    white-space-collapse: 10px;
+    transform: scale(1.1);
+    box-shadow: -3px -3px 4px rgba(0, 0, 0, 0.293) inset ,-1px -1px 3px rgba(0, 0, 0, 0.293);
+}
+.Questio-list {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 500px; /* تعيين حد أدنى للارتفاع */
+    overflow-y: auto; /* تمكين التمرير الرأسي */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 270px;
+  }
+  
+
+ .QuestionBox {
+      border: 1px rgba(0, 0, 0, 0.527) solid;
+      border-radius: 25px;
+      background-color: #ffffff;
+      box-shadow: -1px -1px 8px #0000006d inset; 
+      overflow: hidden;
+      transition: height 0.3s ease;
+      max-height: 500px;
+
+    }
+    .question-header {
+      background-color: #f7f4ea;
+      cursor: pointer;
+      padding: 1em 1.5em;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.3s;
+      box-shadow: -1px -1px 8px #0000006d inset ; 
+    }
+    /* إضافة هذه الأنماط إلى ملف CSS الخاص بك */
+
+.toggle-arrow {
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.toggle-arrow:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.answer-input {
+  width: 90%;
+  min-height: 80px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  resize: vertical;
+  display: block;
+}
+
+.answer-text {
+  padding: 15px;
+  background-color: #f0fff4;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  border-left: 4px solid #4CAF50;
+  display: block;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.save-btn ,.answer-btn{
+  border: 0;
+  border-radius: 20px;
+  background-color: #a4f4ab;
+  color: black;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: block;
+}
+
+.save-btn:hover ,.answer-btn:hover{
+  background-color: #2af93b;
+  transform: scale(1.05);
+}
+
+.hidden-content {
+  padding: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.empty-questions {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  color: #777;
+  font-style: italic;
+}
+
+/* تعديلات على الأنماط الموجودة */
+.QuestionBox {
+  transition: all 0.3s ease;
+}
+
+.QuestionBox:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  margin-right: 23%;
+}
+
+/* .logo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: white;
+  font-family: lato;
+  margin-bottom: 38px;
+  margin-left: 7%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: Nunito;
+}
+
+.nav-link.active {
+  border: white solid;
+  border-radius: 34px;
+  box-shadow: 0 0 38px rgb(255, 248, 248);
+} */
+nav {
+  display: flex;
+  align-items: center;
+  padding: 28px 70px; 
+  color: white;
+  font-family: "lato" , sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: -44px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.siteName {
+  font-size: 2.3rem;
+  font-weight: 740;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  padding-left: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: Nunito;
+}
+
+a:hover {
+  border: white solid;
+  border-radius: 34px;
+  box-shadow: 0 0 28px rgb(255, 248, 248);
+}
+
+/* .links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 1.2rem; 
+  transition: color 0.3s ease;
+} */
+
+.links a:hover {
+  color: #fff;
+}
+.student-list{
+  width: 200px;
+    max-width: 1000px;
+    min-height: 500px;
+    overflow-y: auto; 
+    scrollbar-width: thin;        
+    scrollbar-color: #00412b00 #9fffe500;
+    padding-left: 10px;
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 210px;
+    left: 5px;
+    /* background-color: #02202600; */
+}
+h4{
+  position: absolute;
+    top: -30px;
+    font-family: 'lato', sans-serif;
+    font-size:  20px;
+    font-weight:900;
+}
+.student-avatar {
+  width: 35px;            
+  height: 35px;             
+  border-radius: 50%;        
+  object-fit: cover;         
+  margin-right: 10px;       
+}
+/* .UserName{
+  
+} */

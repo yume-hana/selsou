@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LeadMyWay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(to top, #5DFFCE, #022026);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            background: transparent;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .imgLogo {
+            width: 80px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        .logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Lato', sans-serif;
+            user-select: none;
+        }
+
+        .adminLogin {
+            background-color: #63D6B7;
+            border: none;
+            border-radius: 23px;
+            padding: 10px 25px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 20px;
+            font-weight: 650;
+            color: white;
+            box-shadow: 0 0 1px #0000006d, -3px -3px 8px rgba(0, 0, 0, 0.73) inset;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .adminLogin:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgb(255, 248, 248);
+        }
+
+        /* MAIN PAGE */
+        .firstPage {
+            flex: 1;
+            overflow-y: auto;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .page1 {
+            width: 1041px;
+            background-color: #FFFDF7;
+            border-radius: 34px;
+            box-shadow: 4px 4px 15px #00C17E inset, -4px -4px 15px #00C17E inset;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .welcome h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 44px;
+            font-family: Arial, Helvetica, sans-serif;
+            white-space: pre;
+            text-shadow: 1px 1px 5px #63d6b7c2;
+        }
+
+        .welcome h2 {
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            white-space: pre;
+            text-shadow: 1px 1px 5px #ffe176d6;
+        }
+
+        .welcome .text1 {
+            margin-top: -20px;
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            white-space: pre;
+        }
+
+        .boxtuteurstudent {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            gap: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxtuteur,
+        .boxstudent {
+            width: 280px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 31px;
+            box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.474), 4px 6px 15px rgba(0, 0, 0, 0.299) inset;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .navbar,
+        .logo,
+        .adminLogin,
+        .boxtuteurstudent {
+            user-select: none;
+        }
+
+        .signUp1,
+        .signUp2 {
+            width: 90px;
+            height: 30px;
+            border-radius: 39px;
+            border: 0px;
+            text-align: center;
+            box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.315) inset;
+            cursor: pointer;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .signUp1 {
+            background-color: #63D6B7;
+            color: white;
+        }
+
+        .signUp2 {
+            background-color: #FFE276;
+            color: black;
+        }
+
+        .signUp1:hover,
+        .signUp2:hover {
+            transform: scale(1.1);
+        }
+
+        /* Presentation Boxes */
+        .presentation1,
+        .presentation2 {
+            width: 1041px;
+            height: 300px;
+            margin-top: 100px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            gap: 30px;
+            border-radius: 20px;
+            box-sizing: border-box;
+        }
+
+        .presentation1 {
+            background-color: #ffea002d;
+        }
+
+        .presentation2 {
+            background-color: #00ffb341;
+            border-bottom-left-radius: 34px;
+            border-bottom-right-radius: 34px;
+            margin-top: 0;
+        }
+
+        .img1,
+        .img2 {
+            height: 260px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        .introduction1,
+        .introduction2 {
+            max-width: 500px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 18px;
+            color: #01291c;
+            line-height: 1.4;
+        }
+
+        /* Footer */
+        .footerTutor {
+            width: 100%;
+            text-align: center;
+            color: #01291c;
+            background-color: #11654baf;
+            font-size: 18px;
+            font-family: 'Nunito', sans-serif;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img class="imgLogo"
+                src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png"
+                alt="Lead My Way Logo" name="logoImage" data-role="logo" />
+            <div class="logo" name="siteLogo" data-role="site-name">Lead My Way</div>
+        </div>
+
+        <button id="adminLoginBtn" class="adminLogin" name="adminButton" data-role="admin">Sign In</button>
+    </nav>
+
+    <div class="firstPage">
+        <div class="page1">
+            <div class="welcome" name="welcomeSection" data-role="welcome">
+                <h1>Welcome!</h1>
+                <h2>To Lead My Way</h2>
+                <p class="text1">Take the first step today, and let us lead the way.</p>
+            </div>
+
+            <div class="boxtuteurstudent" name="chooseRoleSection" data-role="choose-role">
+                <div class="boxtuteur" name="tutorBox" data-role="tutor-box">
+                    <h1 class="tuteur1">Tutor</h1>
+                    <p>Support new students and<br />help them achieve their<br />goals easily.</p>
+                    <a href="http://localhost/LMW-PROJET/Tutor.back/register.php">
+                        <button id="signUpTutorBtn" class="signUp1" name="tutorButton" data-role="tutor-signup">Sign
+                            In</button>
+                    </a>
+                </div>
+
+                <div class="boxstudent" name="studentBox" data-role="student-box">
+                    <h1 class="tuteur2">Student</h1>
+                    <p>Join us and get the help you<br />need to start your university<br />journey with confidence.</p>
+                    <a href="http://localhost/LMW-PROJET/Tutor.back/register.php">
+                        <button id="signUpStudentBtn" class="signUp2" name="studentButton" data-role="student-signup">
+                            Sign In
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="presentation1" name="presentationOne" data-role="presentation-1">
+                <img class="img1" src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/Events-pana (2) 1.png"
+                    alt="Presentation Image 1" />
+                <div class="introduction1">
+                    <h3>About Lead My Way</h3>
+                    <p>Lead My Way is a platform dedicated to supervising first-year university students exclusively.
+                        Here, students can ask questions to their tutor and receive personalized answers to guide them.
+                    </p>
+                </div>
+            </div>
+
+            <div class="presentation2" name="presentationTwo" data-role="presentation-2">
+                <img class="img2" src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/Events-pana (3).png"
+                    alt="Presentation Image 2" />
+                <div class="introduction2">
+                    <h3>How It Works</h3>
+                    <p>Students can post questions for tutors and get answers directly on the platform. Additionally,
+                        they can schedule face-to-face meetings with their tutor to receive personalized support (not
+                        online).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footerTutor">
+        <p>© 2025 Shincode - All rights reserved | Designed and developed by Shincode Team</p>
+    </footer>
+
+    <script src="LeadMyWay.js"></script>
+
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadMyWay</title>
+    <link rel="stylesheet" href="http://localhost/LMW-PROJET/Tutor.front/LeadMyWay.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="firstPage">
+        
+        <nav class="navbar">
+            <button id="adminLoginBtn" class="adminLogin" name="adminButton" data-role="admin">Sign In</button>
+
+            <img class="imgLogo" src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png" alt="Lead My Way Logo"
+                name="logoImage" data-role="logo">
+            <div class="logo" name="siteLogo" data-role="site-name">Lead My Way</div>
+        </nav>
+
+        <div class="page1">
+            <div class="welcome" name="welcomeSection" data-role="welcome">
+                <h1>Welcome!</h1>
+                <h2>To Lead My Way</h2>
+                <p class="text1">" Take the first step today, and let us lead the way."</p>
+            </div>
+
+            <div class="boxtuteurstudent" name="chooseRoleSection" data-role="choose-role">
+                <div class="boxtuteur" name="tutorBox" data-role="tutor-box">
+                    <h1 class="tuteur1">Tutor</h1>
+                    <p>Support new students and<br> help them achieve their<br> goals easily tutor.</p>
+                    <button id="signUpTutorBtn" class="signUp1" name="tutorButton" data-role="tutor-signup">Sign
+                        In</button>
+                </div>
+
+                <div class="boxstudent" name="studentBox" data-role="student-box">
+                    <h1 class="tuteur2">Student</h1>
+                    <p>Join us and get the help you <br>need to start your university<br> journey with confidence.</p>
+                    <button id="signUpStudentBtn" class="signUp2" name="studentButton" data-role="student-signup">Sign
+                        In</button>
+                </div>
+            </div>
+
+            <div class="presentation1" name="presentationOne" data-role="presentation-1">
+              <img class="img1" src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/Events-pana (2) 1.png" alt=""> 
+               
+            </div>
+
+            <div class="presentation2" name="presentationTwo" data-role="presentation-2"></div>
+            <img class="img2" src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOREvents-pana (3).png" alt="">
+        </div>
+    </div>
+
+    <footer class="footerTutor">
+  <p>© 2025 Shincode - All rights reserved | Designed and developed by Shincode Team</p>
+</footer>
+
+    <script src="LeadMyWay.js"></script>
+
+</body>
+
+</html> -->

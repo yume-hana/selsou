@@ -1,0 +1,526 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #5DFFCE, #022026);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: left;
+    gap: 0px;
+}
+.imgLogo{
+    /* position: absolute;
+    top:  -9px;
+    left: 0px; */
+    width: 80px;
+    height: 70px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    /* margin-right: rem; */
+    color: white;
+    font-family: lato;
+    margin-top: 10px;
+    /* margin-bottom: 38px;
+    margin-left: 7%; */
+}
+.page2 {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    width: 1041px;
+    height: 650px;
+    background-color: #F6FFFC;
+    border-radius: 34px;
+    box-shadow: -3px 5px 50px #000000ea inset, -6px -5px 15px #00000081 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page22 {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    width: 1041px;
+    height: 650px;
+    background-color: #F6FFFC;
+    border-radius: 34px;
+    box-shadow: -3px 5px 50px #000000ea inset, -6px -5px 15px #00000081 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.signInSignUp{
+    width: 520.5px;
+    height: 650px;
+    background-image: url(http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/lhg.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    /* border-top-left-radius: 34px;
+    border-bottom-left-radius: 34px; */
+    border-radius: 34px;
+    box-shadow: 7px 5px 9px #000000d0;
+}
+.signInSignUp2{
+    width: 520.5px;
+    height: 650px;
+    background-image: url(http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/lhg.jpg);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    /* border-top-left-radius: 34px;
+    border-bottom-left-radius: 34px; */
+    border-radius: 34px;
+    box-shadow: -7px 5px 9px #000000d0;
+}
+.welcomeSign>h1.welcomeSign1{
+    color:#FFFDF7;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'lato', sans-serif;
+    font-size: 65px;
+    font-weight:850;
+    /* white-space: nowrap;  */
+}
+.welcomeSign2>h1.welcomeSign11{
+    color:#FFFDF7;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'lato', sans-serif;
+    font-size: 65px;
+    font-weight:850;
+    white-space: nowrap; 
+}
+.welcomeSign>h1.welcomeSign2{
+    color:#FFFDF7;
+    position: absolute;
+    top: 210px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'lato', sans-serif;
+    font-size: 65px;
+    font-weight:850;
+    
+}
+.welcomeSign>h2.welcomeSign3{
+    color:#FFFDF7;
+    position: absolute;
+    top: 340px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'lato', sans-serif;
+    font-size:  20px;
+    font-weight:800;
+    white-space: nowrap;
+}
+.welcomeSign2>h2.welcomeSign33{
+    color:#FFFDF7;
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'lato', sans-serif;
+    font-size:  20px;
+    font-weight:800;
+    white-space: nowrap; 
+}
+.welcomeSign>h2.welcomeSign4{
+    color:#FFFDF7;
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'lato', sans-serif;
+    font-size:  20px;
+    font-weight:800;
+    white-space: nowrap; 
+}
+.welcomeSign2>h2.welcomeSign44{
+    color:#FFFDF7;
+    position: absolute;
+    top: 291px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'lato', sans-serif;
+    font-size:  20px;
+    font-weight:800;
+    white-space: nowrap; 
+}
+.SignInAnimation{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 35px;
+    background-color: #63d6b700;
+    border-radius: 23px;
+    box-shadow: -2px -2px 1px #0000006d ,-3px -3px 8px rgba(0, 0, 0, 0.734) inset;
+    border: 2;
+    border-color: #FFFDF7;
+}
+.SignInAnimation2{
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 35px;
+    background-color: #63d6b700;
+    border-radius: 23px;
+    box-shadow: -2px -2px 1px #0000006d ,-3px -3px 8px rgba(0, 0, 0, 0.734) inset;
+    border: 2;
+    border-color: #FFFDF7;
+}
+.SignInAnimation>p{
+    font-family: 'nunito',sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    position: absolute;
+    color: #FFFDF7;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+}
+.SignInAnimation2>p{
+    font-family: 'nunito',sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    position: absolute;
+    color: #FFFDF7;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+}
+.SignInAnimation:hover{
+    background-color: #2bbd9696;
+}
+.SignInAnimation2:hover{
+    background-color: #2bbd9696;
+}
+.infoTuteur{
+    position: absolute;
+    top: 80px;
+    left: 560px;
+    width: 450px;
+    height: 530px;
+    background-color: #ffffff;
+    border-radius: 23px;
+    box-shadow: 4px 6px 5px #00000081 ,-4px 0px 5px #00000051 ;
+}
+.infoTuteurLOGIN{
+    position: absolute;
+    top: 150px;
+    left: 55px;
+    width: 400px;
+    height: 330px;
+    background-color: #ffffff;
+    border-radius: 23px;
+    box-shadow: 4px 6px 5px #00000081 ,-4px 0px 5px #00000051 ;
+}
+.CreateTuteurAccount{
+    position: absolute;
+    top: 30px;
+    left: 650px;
+    font-family: 'lato', sans-serif;
+    font-size:  14px;
+    font-weight:100;
+}
+.LOGINTuteurAccount{
+    position: absolute;
+    top: 95px;
+    left: 140px;
+    font-family: 'lato', sans-serif;
+    font-size:  14px;
+    font-weight:500;
+}
+.infoTuteur>p{
+    font-family: 'nunito',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.TextFirstNameBOX1{
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+.TextLastNameBOX1{
+    position: absolute;
+    left: 250px;
+    top: 15px;
+}
+.TextPasswordBOX1{
+    position: absolute;
+    left: 135px;
+    top: 76px;
+}
+.TextPhoneNumberBOX1{
+    position: absolute;
+    left: 50px;
+    top: 135px;
+}
+.TextEmailAddressOX1{
+    position: absolute;
+    left: 250px;
+    top: 135px;
+}
+
+.TextAddressBOX1{
+    position: absolute;
+    left: 135px;
+    top: 195px;
+}
+.infoTuteurLOGIN>p{
+    font-family: 'nunito',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.TextEmailAddressOX11{
+    position: absolute;
+    left: 70px;
+    top: 55px;
+}
+.TextPasswordBOX11{
+    position: absolute;
+    left: 70px;
+    top: 125px;
+}
+.FirstNameBOX1{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.LastNameBOX1{
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.PasswoerdBOX1{
+    position: absolute;
+    left: 50%;
+    top: 110px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.PasswoerdBOX11{
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 40px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.PhoneNumberBOX{
+    position: absolute;
+    top: 170px;
+    left: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.EmailAddressBOX{
+    position: absolute;
+    top: 170px;
+    right: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.EmailAddressBOX2{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 40px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.AddressBOX{
+    position: absolute;
+    left: 50%;
+    top: 230px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+}
+.question1{
+    font-family: 'nunito',sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    position: absolute;
+    top: 270px;
+    left: 40px;
+}
+input{
+    padding-left: 18px;
+     max-width: 200px; /* يمنع التوسع */
+  box-sizing: border-box; /* باش padding و border ما يزيدوش الطول */
+}
+input:hover{
+    background-color: #f6ecd4;
+    box-shadow: 2px 2px 1px #00000081 ,-3px 3px 3px #00000041 inset;
+    /* transform: scale(1.1); */
+}
+select:hover{
+    background-color: #f6ecd4;
+    box-shadow: 2px 2px 1px #00000081 ,-3px 3px 3px #00000041 inset;
+}
+.infoTuteur>input::placeholder{
+    color: #9493909f;
+    font-size: 12px;
+    position: absolute;
+    left: 18px;
+    font-family: 'nunito', sans-serif;
+}
+.DateOfBirth{
+    font-family: 'nunito',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 278px;
+    right: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+    color: #343434;
+    font-size: 12px;
+    padding-left: 18px;
+    padding-right: 15px;
+}
+.MaleFemaleBOX{
+    font-family: 'nunito',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 320px;
+    right: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+    color: #343434;
+    font-size: 12px;
+    padding-left: 18px;
+    padding-right: 1px;
+}
+.GenderTuteurQuestion{
+    font-family: 'nunito',sans-serif;
+    font-size: 13.9px;
+    font-weight: 600;
+    position: absolute;
+    top: 311px;
+    left: 40px;
+}
+.QualityTuteurQuestion{
+    font-family: 'nunito',sans-serif;
+    font-size: 13.9px;
+    font-weight: 600;
+    position: absolute;
+    top: 351px;
+    left: 40px;
+}
+.QualityTuteurBOX{
+    font-family: 'nunito',sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 362px;
+    right: 40px;
+    width: 170px;
+    height: 30px;
+    background-color: #fcf9f1;
+    border-radius: 23px;
+    box-shadow: 1px 1px 1px #00000081 ,-2px 2px 3px #0000001d inset;
+    border: 0;
+    color: #343434;
+    font-size: 12px;
+    padding-left: 18px;
+    padding-right: 1px;
+}
+.SignUPToHome{
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 35px;
+    background-color: #63D6B7;
+    border-radius: 23px;
+    box-shadow: -2px -2px 1px #0000006d ,-3px -3px 8px rgba(0, 0, 0, 0.734) inset;
+    border: 0;
+}
+.SignUPToHome:hover{
+    background-color: #2bbd96;
+}
+.SignUPToHome>p{
+    font-family: 'nunito',sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    position: absolute;
+    color: #343434;
+    top: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap; 
+}
+.hide{
+    display: none;
+}

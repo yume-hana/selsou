@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- the file of profile.html -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeadMyWay</title>
+  <link rel="shortcut icon"
+    href="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png"
+    type="image/x-icon">
+    <link rel="stylesheet" href="http://localhost/LMW-PROJET/Tutor.front/profile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png"
+        alt="">
+      <h1 class="siteName">Lead My Way</h1>
+    </div>
+    <div class="links">
+      <a href="TutorHome.html">Home</a>
+      <a href="AnswerOfTutorToQuestions.html">Questions</a>
+      <a href="MeetingTuteur.html">Meeting</a>
+      <a href="FAQTutor.html">FAQ</a>
+      <a href="MyStudent.html">My_Students</a>
+    </div>
+    <div class="UserName"></div>
+  </nav>
+  <div class="pageMeetingTutor">
+    <div class="profile-card">
+      <h2>Tutor Profile</h2>
+
+      <div class="profile-group">
+        <label for="first_nameT">First Name</label>
+        <div class="profile-value" id="first_nameT_display"></div>
+        <input type="text" id="first_nameT" placeholder="Enter first name">
+      </div>
+
+      <div class="profile-group">
+        <label for="last_nameT">Last Name</label>
+        <div class="profile-value" id="last_nameT_display"></div>
+        <input type="text" id="last_nameT" placeholder="Enter last name">
+      </div>
+
+      <div class="profile-group">
+        <label for="phone_numberT">Phone Number</label>
+        <div class="profile-value" id="phone_numberT_display"></div>
+        <input type="tel" id="phone_numberT" placeholder="+213...">
+      </div>
+
+      <div class="profile-group">
+        <label for="Email_addressT">Gmail</label>
+        <div class="profile-value" id="Email_addressT_display"></div>
+        <input type="email" id="Email_addressT" placeholder="example@gmail.com">
+      </div>
+
+      <div class="profile-group">
+        <label for="Address">Address</label>
+        <div class="profile-value" id="Address_display"></div>
+        <input type="text" id="Address" placeholder="Enter address">
+      </div>
+
+      <button class="btn" id="editBtn" onclick="toggleEdit()">Edit Profile</button>
+      <button class="btn" id="saveBtn" onclick="submitProfile()" style="display:none;">Save Profile</button>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+
+</body>
+
+</html>

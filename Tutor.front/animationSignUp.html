@@ -1,0 +1,76 @@
+<!-- <html lang="en"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadMyWay</title>
+    <link rel="icon" href="image/491004696_1414770356176410_912691794412146724_n.png" type="image/png" sizes="64x64">
+    <link rel="stylesheet" href="animationSignIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div class="secondPage">
+        <nav class="navbar">
+            <img class="imgLogo" src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png" alt="">
+            <div class="logo">Lead My Way</div>
+        </nav>
+        <div class="page2">
+            <div class="signInSignUp">
+                <div class="welcomeSign">
+                    <h1 class="welcomeSign1">WELCOME <H1 class="welcomeSign2">Back!</H1>
+                    </h1>
+                    <h2 class="welcomeSign3">To keep connected with us please <h2 class="welcomeSign4">Sign in with your
+                            personal info</h2>
+                    </h2>
+                    <a class="SignInAnimation" href="animationSignIn.html"><p>Sign In</p></a>
+                </div>
+            </div>
+            <div class="CreateTuteurAccount">
+                <h2>Create Tutor’s Account</h2>
+            </div>
+            <form action="register.php" method="POST" class="infoTuteur">
+                <p class="TextFirstNameBOX1">first name:</p>
+                <input class="FirstNameBOX1" type="text" name="first_name" placeholder="First Name" required>
+            
+                <p class="TextLastNameBOX1">last name:</p>
+                <input class="LastNameBOX1" type="text" name="last_name" placeholder="Last Name" required>
+            
+                <p class="TextPasswordBOX1">Password:</p>
+                <input class="PasswoerdBOX1" type="password" name="password" placeholder="Password" required>
+            
+                <p class="TextPhoneNumberBOX1">Phone Number:</p>
+                <input class="PhoneNumberBOX" type="text" name="phone" placeholder="Phone Number" required>
+            
+                <p class="TextEmailAddressOX1">Email Address:</p>
+                <input class="EmailAddressBOX" type="email" name="email" placeholder="Email Address" required>
+            
+                <p class="TextAddressBOX1">Address:</p>
+                <input class="AddressBOX" type="text" name="address" placeholder="Address" required>
+            
+                <p class="question1">What is your date of birth?</p>
+                <div>
+                    <input class="DateOfBirth" type="date" max="2008-12-31" name="dob">
+            
+                    <p class="GenderTuteurQuestion">What is your Gender?</p>
+                    <select class="MaleFemaleBOX" name="gender">
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+            
+                    <p class="QualityTuteurQuestion">What is your Quality?</p>
+                    <select class="QualityTuteurBOX" name="quality">
+                        <option value="teacher">teacher</option>
+                        <option value="StudentMaster">Student Master</option>
+                    </select>
+                </div>
+            
+                <button type="submit" id="isSignUnPage" class="SignUPToHome">
+                    <p>Sign Up</p>
+                </button>
+            </form>
+            
+        </div>
+        <script src="animationSignIn.js"></script>
+</body>
+</html>

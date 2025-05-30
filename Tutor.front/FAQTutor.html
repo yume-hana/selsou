@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LeadMyWay</title>
+  <link rel="shortcut icon" href="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png" type="image/x-icon">
+  <link rel="stylesheet" href="FAQTutor.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png" type="image/png" sizes="64x64">
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png" alt="">
+      <h1 class="siteName">Lead My Way</h1>
+    </div>
+    <div class="links">
+      <a href="TutorHome.html">Home</a>
+      <a href="AnswerOfTutorToQuestions.html">Questions</a>
+      <a href="MeetingTuteur.html">Meeting</a>
+      <a href="MyStudent.html">My_Students</a>
+      <a href="profile.html">My_Profile</a> 
+    </div>
+    <div class="UserName"></div>
+  </nav>
+  <div class="pageFAQTutor">
+    <img class="imgFAQ" src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/FAQs-amico (1).png" alt="">
+    <h1 class="FAQtitle">Frequently Asked Questions</h1>
+    <form class="BOXcreateFAQ">
+      <label for="question">Enter the question:</label>
+      <input type="text" id="questionFAQ" placeholder="What is a FAQ that you would like to add?" />
+      <label for="answer">Enter the answer:</label>
+      <input type="text" id="answerFAQ" placeholder="Its answer" />
+      <button id="btnCreateFAQ" type="submit">Create</button>
+      <button id="btnCancelFAQ" type="submit">Cancel</button>
+    </form>
+    <div class="FAQbtn">
+      <button class="All">All</button>
+      <button class="CreatedbyMe">Created by Me</button>
+    </div>
+    <!-- <div class="searchFAQ"><input type="search" name="searchFAQ" placeholder="search"><img src="image/1076744.png"
+        alt=""></div> -->
+    <div id="faqListContainer" class="faq-list"></div>
+      <!-- <div class="FAQbox">
+        <div class="question-item">
+          <span>Q: ما هو HTML؟</span>
+          <span class="arrow">&#9654;</span>
+        </div>
+        <div class="answer-item">
+          A: HTML هي لغة ترميز تستخدم لإنشاء صفحات الويب وتحديد محتواها وهيكلها.
+          <button class="delateBtn">Delate</button>
+        </div>
+      </div> -->
+
+  
+  </div>
+  <script src="FAQTutor.js"></script>
+</body>
+
+</html>

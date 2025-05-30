@@ -1,0 +1,175 @@
+body {
+      margin: 0;
+      height: 100%;
+      overflow: hidden; /* نمنع السكرول هنا */
+      background: linear-gradient(to top, #5DFFCE, #022026);
+    }
+
+    .firstPage {
+      height: 100%;
+      overflow-y: auto; /* السكرول هنا فقط */
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+      scrollbar-width: none; /* Firefox */
+    }
+
+    .firstPage::-webkit-scrollbar {
+      display: none; /* Chrome */
+    }
+
+    .page1 {
+      width: 1041px;
+      background-color: #FFFDF7;
+      border-radius: 34px;
+      box-shadow: 4px 4px 15px #00C17E inset, -4px -4px 15px #00C17E inset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+.welcome h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+    font-family: lato, Helvetica, sans-serif;
+    white-space: pre;
+    text-shadow: 1px 1px 5px #63d6b7c2;
+}
+
+.welcome h2 {
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: lato, sans-serif;
+    white-space: pre;
+    text-shadow: 1px 1px 5px #ffe176d6;
+}
+
+.welcome .text1 {
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-family: lato, 'Times New Roman', Times, serif;
+    white-space: pre;
+}
+.boxtuteurstudent {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxtuteur, .boxstudent {
+    width: 280px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 31px;
+    box-shadow: +4px +6px 15px rgba(0, 0, 0, 0.474), +4px +6px 15px rgba(0, 0, 0, 0.299) inset;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: left;
+    gap: 0px;
+}
+
+.imgLogo {
+    width: 80px;
+    height: 70px;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    font-family: lato;
+    margin-top: 10px;
+}
+.signUp1, .signUp2 {
+    width: 90px;
+    height: 30px;
+    border-radius: 39px;
+    border: 0px;
+    text-align: center;
+    box-shadow: -2px -2px 8px rgba(0, 0, 0, 0.315) inset;
+    font-family: nunito;
+}
+
+.signUp1 {
+    background-color: #63D6B7;
+}
+
+.signUp2 {
+    background-color: #FFE276;
+}
+
+.signUp1:hover, .signUp2:hover {
+    transform: scale(1.1);
+}
+.presentation1, .presentation2 {
+    width: 1041px;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.presentation1 {
+    background-color: #ffea002d;
+}
+.img1{
+     width: 541px;
+    height: 500px;
+    margin-top: -100px;
+}
+.img2{
+     width: 441px;
+    height: 290px;
+    margin-top: -300px;
+    margin-right: -570px;
+}
+.presentation2 {
+    background-color: #00ffb341;
+    border-bottom-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    margin-top: 0;
+}
+/* footer {
+    background-color: #17ae81;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+} */
+ .footerTutor {
+  width: 100%;
+  text-align: center;
+  color: #01291c;
+  background-color: #11654baf;
+  font-size: 18px;
+  font-family: nunito;
+}
+.adminLogin{
+    border-radius: 39px;
+    /* border: 0px; */
+    padding: 10px 25px;
+    text-align: center;
+    background-color: #63d6b782;
+    border-radius: 23px;
+    box-shadow: 0px 0px 1px #0000006d ,-3px -3px 8px rgba(0, 0, 0, 0.734) inset;
+    border: 0.5;
+    border-color: #fffdf7;
+    white-space: nowrap;
+    font-family: "nunito";
+    font-size: 20px;
+    font-weight:650;
+    text-shadow: 0px 0px 10px #00ffb3 ;
+    color: white;
+} 
+.adminLogin:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgb(255, 248, 248);
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LeadMyWay</title>
+  <link rel="shortcut icon" href="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png" type="image/x-icon">
+<style>
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #5DFFCE, #022026);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .pageMeetingTutor {
+    margin-bottom: 100px;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 620px;
+    background-color: #F1FDF9;
+    border-radius: 34px;
+    box-shadow: -6px 5px 20px #0000008d, 3px 5px 50px #000000db inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #00412b00 #9fffe500;
+    padding: 30px 40px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 28px 70px;
+    color: white;
+    font-family: "Lato", sans-serif;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: -44px;
+  }
+
+  .logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .siteName {
+    font-size: 2.3rem;
+    font-weight: 740;
+    white-space: nowrap;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .links {
+    display: flex;
+    gap: 30px;
+    padding-left: 300px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: Nunito, sans-serif;
+  }
+
+  a:hover {
+    border: white solid;
+    border-radius: 34px;
+    box-shadow: 0 0 28px rgb(255 248 248);
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    color: #022026;
+  }
+
+  ul.students-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 1000px;
+  }
+
+  ul.students-list li {
+    display: flex;
+    align-items: center;
+    background-color: #d8f4ef;
+    border-radius: 15px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    box-shadow: 2px 4px 10px #00000033;
+  }
+
+  ul.students-list img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #00412b;
+  }
+
+  ul.students-list .student-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #022026;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  ul.students-list li:hover .student-name {
+    font-size: 1.3rem;
+    color: #014421;
+  }
+</style>
+</head>
+<body>
+<nav>
+    <div class="logo">
+      <img src="http://localhost/LMW-PROJET/Tutor.front/imagesTUTOR/491004696_1414770356176410_912691794412146724_n.png" alt="">
+      <h1 class="siteName">Lead My Way</h1>
+    </div>
+    <div class="links">
+      <a href="TutorHome.html">Home</a>
+      <a href="AnswerOfTutorToQuestions.html">Questions</a>
+      <a href="MeetingTuteur.html">Meeting</a>
+      <a href="FAQTutor.html">FAQ</a>
+      <a href="profile.html">My_Profile</a>
+    </div>
+    <div class="UserName"></div>
+  </nav>
+
+  <section class="pageMeetingTutor">
+    <h2>My Supervised Students</h2>
+    <ul class="students-list" id="students-list">
+      <li>Loading students...</li>
+    </ul>
+  </section>
+
+<script>
+  const ul = document.getElementById('students-list');
+
+  fetch('https://example.com/api/students') // <-- عوضي هذا بالرابط الحقيقي لبيانات API
+    .then(response => {
+      if (!response.ok) throw new Error('Network response was not ok');
+      return response.json();
+    })
+    .then(students => {
+      ul.innerHTML = '';
+      students.forEach(student => {
+        const li = document.createElement('li');
+
+        const img = document.createElement('img');
+        img.src = student.profile_image;
+        img.alt = `${student.ST_first_name} ${student.ST_last_name}`;
+
+        const nameSpan = document.createElement('span');
+        nameSpan.classList.add('student-name');
+        nameSpan.textContent = `${student.ST_first_name} ${student.ST_last_name}`;
+
+        li.appendChild(img);
+        li.appendChild(nameSpan);
+
+        ul.appendChild(li);
+      });
+    })
+    .catch(error => {
+      console.error('Fetch error:', error);
+      ul.innerHTML = '<li>Error loading students</li>';
+    });
+</script>
+
+</body>
+</html>

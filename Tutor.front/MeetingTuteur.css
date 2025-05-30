@@ -1,0 +1,228 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #5DFFCE, #022026);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.pageMeetingTutor {
+    margin-bottom: 100px;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1251px;
+    height: 100vh;
+    background-color: #F1FDF9;
+    border-radius: 34px;
+    box-shadow: -6px 5px 20px #0000008d , 3px 5px 50px #000000db inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    scrollbar-width: thin;        
+    scrollbar-color: #00412b00 #9fffe500;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 28px 70px; 
+  color: white;
+  font-family: "lato" , sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: -44px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.siteName {
+  font-size: 2.3rem;
+  font-weight: 740;
+  white-space: nowrap;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+  padding-left: 300px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: Nunito;
+}
+
+a:hover {
+  border: white solid;
+  border-radius: 34px;
+  box-shadow: 0 0 28px rgb(255, 248, 248);
+}
+ 
+  .links a:hover {
+    color: #fff;
+  }
+  
+  .MeetingToTutor{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    font-family: 'lato', sans-serif;
+    font-size:  50px;
+    font-weight:1000;
+}
+.ListMeeting{
+    width: 100%;
+    max-width: 1000px;
+    min-height: 500px; /* تعيين حد أدنى للارتفاع */
+    overflow-y: auto; /* تمكين التمرير الرأسي */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 270px;
+}
+.MeetingBox{
+    background-color: #f9f9f9;
+    width: 950px;
+    min-height:160px;
+    box-shadow: -1px -1px 8px #0000006d inset ; 
+    border-radius: 14px;
+    font-family: lato, sans-serif;
+    font-weight: 900;
+    padding: 20px;
+}
+    .MeetingBox div {
+      margin-bottom: 10px;
+    }
+    .MeetingBox strong {
+      width: 90px;
+      display: inline-block;
+    }
+    .MeetingBox input {
+      width: calc(100% - 100px);
+    }
+    button {
+      padding: 6px 12px;
+      margin-right: 5px;
+      border: 0;
+  border-radius: 7px;
+  background-color: #a4f4ab;
+  color: black;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  display: block;
+    }
+    button:hover{
+      background-color: #2af93b;
+  transform: scale(1.05);
+    }
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .user-info img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .user-info span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .MeetingBox input {
+      width: calc(100% - 100px);
+      padding: 5px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+    .default-actions,
+.edit-actions {
+  display: flex;
+  gap: 10px; /* مسافة بين الأزرار */
+}
+.Meeting>button.AllMeeting_active{
+  /* position: absolute;
+  top: 196px;
+  left: 290px; */
+  width: 60px;
+  height: 30px;
+  background-color: #faf0cd;
+  border-radius: 23px;
+  box-shadow: 3px 3px 4px #0000005e ,0px 4px 4px rgba(0, 0, 0, 0.293) inset;
+  border: 0;
+}
+.Meeting>button.active {
+  transform: scale(1.2);
+  background-color: #fae186;
+}
+
+.Meeting>button.Completed{
+  width: 170px;
+  height: 30px;
+  background-color: #faf0cd;
+  border-radius: 23px;
+  box-shadow: 3px 3px 4px #0000005e ,0px 4px 4px rgba(0, 0, 0, 0.293) inset;
+  border: 0;
+}
+.Meeting>button.Not_Completed{
+  width: 170px;
+  height: 30px;
+  background-color: #faf0cd;
+  border-radius: 23px;
+  box-shadow: 3px 3px 4px #0000005e ,0px 4px 4px rgba(0, 0, 0, 0.293) inset;
+  border: 0;
+}
+.Meeting>button:hover{
+  white-space-collapse: 10px;
+  transform: scale(1.1);
+  background-color: #fde9a3;
+}
+.Meeting>button:focus{
+  white-space-collapse: 10px;
+  transform: scale(1.2);
+  background-color: #fae186;
+}
+.Meeting{
+  display: flex;
+  gap: 110px;
+position: absolute;
+top: 180px;
+left: 130px;
+}
