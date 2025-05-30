@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #5DFFCE, #022026);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1530px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    margin-right: 23%;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 2rem;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 38px;
+    margin-left: 7%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-link.active {
+    border: white solid;
+    border-radius: 34px;
+    box-shadow: 0 0 38px rgb(255, 248, 248);
+}
+
+.page {
+    background-color: #f8f8f8;
+    border-radius: 34px;
+    box-shadow: -3px 5px 30px #000000ea inset, -6px -5px 15px #00000081;
+    margin-top: -2rem;
+    min-height: 640px;
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+footer {
+    background-color: #052c34;
+    padding: 30px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: larger;
+    font-style: normal;
+    font-family: sans-serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+}
+
+.notification-icon {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+.user-profile {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.user-profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    margin-right: 1rem;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Profile Page Specific Styles */
+.profile-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-title {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #022026;
+}
+
+.profile-card {
+    background-image: url("");
+    background-color: rgba(224, 224, 224, 0.418);
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgb(0, 0, 0);
+    padding: 30px;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 30px;
+}
+
+.profile-avatar-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#profileAvatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-avatar-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(95, 240, 175, 0.516);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.change-photo-btn {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-avatar-overlay:hover {
+    height: 50px;
+    background-color: rgba(12, 71, 82, 0.7);
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #022026;
+}
+
+.profile-info p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.profile-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.detail-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.detail-section h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #022026;
+    border-bottom: 2px solid #5DFFCE;
+    padding-bottom: 5px;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 600;
+    width: 120px;
+    color: #555;
+}
+
+.detail-value {
+    flex-grow: 1;
+    color: #333;
+}
+
+.editable-field {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.edit-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #022026;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.edit-btn:hover {
+    opacity: 1;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.action-btn {
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.action-btn.primary {
+    background-color: #022026;
+    color: white;
+}
+
+.action-btn.primary:hover {
+    background-color: #033740;
+    box-shadow: 0 4px 12px rgba(2, 32, 38, 0.3);
+}
+
+.action-btn.secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.action-btn.secondary:hover {
+    background-color: #d0d0d0;
+}
+
+.status-message {
+    margin-left: 20px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: none;
+}
+
+.status-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    display: block;
+}
+
+.status-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    display: block;
+}
+
+.status-message.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    display: block;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: modalFadeIn 0.3s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #022026;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #033740;
+}
+
+#modalTitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #022026;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #5DFFCE;
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Hide save and cancel buttons by default */
+#savePhotoBtn,
+#cancelBtn {
+    display: none;
+}

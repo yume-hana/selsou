@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadMyWay</title>
+    <link rel="icon" href="logo.png" type="image/png" sizes="64x64">
+    <link rel="stylesheet" href="animationSignIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .password-container {
+            position: relative;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #888;
+        }
+        .toggle-password:hover {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="secondPage">
+        <div class="navbar">
+            <img src="logo.png" class="site-logo" alt="Logo">
+            <div class="site-name">
+                <div class="logo">Lead My Way</div>
+            </div>
+        </div>
+
+        <div class="page22">
+            <div class="signInSignUp2">
+                <div class="welcomeSign2">
+                    <h1 class="welcomeSign11">Your Path Awaits !</h1>
+                    <h2 class="welcomeSign33">Sign in to walk it with purpose</h2>
+                    <h2 class="welcomeSign44"></h2>
+                    <a class="SignInAnimation2" href="SIGNUPST.php"><p>Sign Up</p></a>
+                </div>
+            </div>
+
+            <div class="LOGINTuteurAccount">
+                <!-- ممكن تحذفي هذا الشعار الثاني إذا راهو مكرر -->
+                <!-- <div class="logo">Lead My Way</div> -->
+            </div>
+
+            <div class="infoTuteurLOGIN">
+                <h2 class="login-title">Get Started</h2>
+               <form action="login.php" method="POST">
+            <p class="TextEmailAddressOX11">Email Address:</p>
+            <input class="EmailAddressBOX2" type="email" name="ST_email_address" placeholder="Email Address" required>
+       
+            <p class="TextPasswordBOX11">Password:</p>
+            <div class="password-container">
+                <input class="PasswoerdBOX11" type="password" id="password" name="ST_password" placeholder="password" required>
+                <i class="toggle-password fas fa-eye" id="togglePassword"></i>
+            </div>
+       
+            <div class="remember-me">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+       
+              <button class="SignUPToHome">
+                  <p>Sign In</p>
+              </button>
+        </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="animationSignIn.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePassword = document.getElementById('togglePassword');
+            const password = document.getElementById('password');
+
+            togglePassword.addEventListener('click', function() {
+                // Toggle the type attribute
+                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                password.setAttribute('type', type);
+                
+                // Toggle the eye icon
+                this.classList.toggle('fa-eye');
+                this.classList.toggle('fa-eye-slash');
+            });
+        });
+    </script>
+</body>
+
+</html>

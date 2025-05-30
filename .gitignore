@@ -1,0 +1,5 @@
+.env
+node_modules/
+profile_images/*
+!profile_images/default.png
+my_error_log.log

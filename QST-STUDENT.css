@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, #5DFFCE, #022026);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1530px;
+  margin: 0 auto;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  margin-right: 23%;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  margin-right: 2rem;
+  color: white;
+  font-family: lato;
+  margin-bottom: 38px;
+  margin-left: 7%;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: Nunito;
+}
+
+.nav-link.active {
+  border: white solid;
+  border-radius: 34px;
+  box-shadow: 0 0 38px rgb(255, 248, 248);
+}
+
+.page {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #00412b00 #9fffe500;
+  background-color: #f8f8f8;
+  border-radius: 34px;
+  margin-top: -2rem;
+  min-height: 640px;
+  box-shadow: -3px 5px 30px #000000ea inset, -6px -5px 15px #00000081;
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #052c34;
+  padding: 30px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: larger;
+  font-style: normal;
+  font-family: sans-serif
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+.notification-icon {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.user-profile {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.user-profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.textare-qst {
+  border: #0c404b solid;
+  height: 150px;
+
+  width: 700px;
+  margin-top: 100px;
+  margin-left: 100px;
+  border-radius: 34px;
+  background-color: hsl(0, 0%, 100%);
+  position: relative;
+  box-shadow: 0px 2px 18px #000000;
+}
+
+.textarea {
+  width: 650px;
+  height: 60px;
+  margin-top: 40px;
+  margin-left: 20px;
+  border: #000000 1;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: 'Nunito', sans-serif;
+}
+
+#send {
+  margin-left: 200px;
+  padding: 6.5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 50px;
+  background: #43BD9B;
+  color: rgb(0, 0, 0);
+  font-family: lato;
+  font-size: medium;
+  box-shadow: 2px 3px 3px #575757bd;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#send:hover {
+  background-color: #36a082;
+}
+
+#Reset {
+  padding: 6.5px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 50px;
+  background: #fff38b;
+  color: rgb(0, 0, 0);
+  font-family: lato;
+  font-size: medium;
+  box-shadow: 2px 3px 3px #57575799;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#Reset:hover {
+  background-color: #f0e570;
+}
+
+.photoqst {
+  position: absolute;
+  width: 800px;
+  height: 800.74px;
+  left: 860px;
+  top: 11.5px;
+}
+
+.photoqst img {
+  max-width: 100%;
+  height: auto;
+}
+
+.penteryourqst {
+  font-family: nunito;
+  font-weight: 900;
+  font-size: larger;
+  position: absolute;
+  margin-left: 50px;
+  padding-top: 10px;
+}
+
+.titleQST {
+  position: absolute;
+  left: 335px;
+  top: 30px;
+  font-family: nunito;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.div-buttons {
+  margin-top: 25px;
+  margin-left: 70px;
+}
+
+.buttons0,
+.buttons1,
+.buttons2 {
+  padding: 8px;
+  border-radius: 14px;
+  margin: 7px;
+  background-color: #f8f8f8;
+  border: none;
+  font-family: lato;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons0:hover {
+  background-color: #f3cf4f;
+}
+
+.buttons1:hover {
+  background-color: #9df7bf;
+}
+
+.buttons2:hover {
+  background-color: #fffa9e;
+}
+
+/* New styles for the question list */
+#my-questions {
+  margin-top: 5px;
+  width: 100%;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+#question-list {
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.question-item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-family: 'Nunito', sans-serif;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 8px;
+}
+
+.question-number {
+  font-weight: bold;
+  color: #333;
+}
+
+.question-date {
+  color: #3d3d3d;
+  font-size: 0.9em;
+}
+
+.question-content {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  color: #252525;
+}
+
+.question-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.status-answered {
+  background-color: #9df7bf;
+  color: #006622;
+}
+
+.status-pending {
+  background-color: #fffa9e;
+  color: #806600;
+}
+
+.answer-section {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed #ddd;
+}
+
+.answer-header {
+  font-weight: bold;
+  color: #0c404b;
+  margin-bottom: 8px;
+}
+
+.answer-content {
+  background-color: #eefcf7;
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 4px solid #43bd96;
+}
+
+.active-filter {
+  background-color: #072a35;
+  color: white;
+}
+
+/* Make the textare-qst expand to fit questions */
+.textare-qst {
+  height: auto;
+  min-height: 150px;
+  padding-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .photoqst {
+      display: none;
+  }
+
+  .textare-qst {
+      width: 90%;
+      margin-left: 5%;
+  }
+
+  .textarea {
+      width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      margin-right: 0;
+      justify-content: center;
+  }
+
+  .logo {
+      margin-left: 0;
+  }
+
+  .titleQST {
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  #send,
+  #Reset {
+      margin-left: 5%;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .div-buttons {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+  }
+}

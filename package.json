@@ -1,0 +1,11 @@
+{
+  "name": "lead-my-way",
+  "version": "1.0.0",
+  "description": "Student tutoring platform",
+  "scripts": {
+    "start": "php -S localhost:8000"
+  },
+  "dependencies": {
+    "fullcalendar": "^6.1.8"
+  }
+}

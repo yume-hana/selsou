@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="QST-STUDENT.css">
+    <title>Lead My Way</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">Lead My Way</div>
+            <div class="nav-links">
+                <a href="studentFAQ.php" class="nav-link">FAQ</a>
+                <a href="studenthome.php" class="nav-link">Home</a>
+                <a href="QST-STUDENT.html" class="nav-link active">Question</a>
+                <a href="meetingST.php" class="nav-link">Meeting</a>
+                <a href="#" class="nav-link">My Tutor</a>
+                <div class="notification-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="user-section">
+                <div class="username">Guest</div>
+                <div class="user-profile">
+                    <img src="use.jpg" alt="User profile" />
+                </div>
+            </div>
+        </nav>
+        <div class="page">
+            <h1 class="titleQST">Questions :</h1>
+            <div class="textare-qst">
+                <p class="penteryourqst">Enter your question here:</p>
+                <form id="question-form">
+                    <textarea class="textarea" name="question" id="question-input"
+                        placeholder="Enter your Question here"></textarea>
+                    <input type="submit" value="Send" id="send">
+                    <input type="reset" value="Reset" id="Reset">
+                </form>
+            </div>
+
+
+            <div class="div-buttons">
+                <button class="buttons0 active-filter" data-filter="all">ALL</button>
+                <button class="buttons1" data-filter="answered">Answered Questions</button>
+                <button class="buttons2" data-filter="unanswered">UNanswered Questions</button>
+            </div>
+            <section id="my-questions">
+                <div id="question-list">
+                    <!-- Questions will be displayed here dynamically -->
+                </div>
+            </section>
+
+            <div class="photoqst">
+                <img src="Questions1.png" alt="picture not available" />
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p> by SHINCODE</p>
+    </footer>
+
+    <script src="QST-STUDENT.js"></script>
+</body>
+
+</html>
